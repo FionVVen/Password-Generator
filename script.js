@@ -16,7 +16,7 @@ var confirmNumericCharacter;
 var confirmUpperCase;
 var confirmLowerCase;
 
-// Prompt to confirm how many characters the user would like in their password
+// Prompt to confirm how many characters the user would like in their password 
 function generatePassword() {
   var confirmLength = (prompt("How many characters would you like your password to contain?"));
 
@@ -27,7 +27,7 @@ function generatePassword() {
       } 
 
       // Repeat back how many charactes the user will have  
-      alert(`Your password will have ${confirmLength} characters`);
+      alert("Your password will have "  + confirmLength + " characters");
 
     // Determine parameters of password 
     var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
@@ -61,6 +61,7 @@ function generatePassword() {
     if (confirmUpperCase) {
       passwordCharacters = passwordCharacters.concat(alphaUpper)
     }
+
 
       console.log(passwordCharacters)
 
